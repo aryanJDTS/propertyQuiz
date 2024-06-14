@@ -20,7 +20,7 @@ export default function QuestionForm() {
 
     const submitHandler= async ()=>{
         console.log("button clicked")
-        const response= await fetch('http://localhost:8000/saveLeadData',{
+        const response= await fetch('https://lasttry-4b4w.onrender.com/saveLeadData',{
             method:"POST",
             headers:{
                 "content-type":"application/json"
@@ -59,15 +59,15 @@ export default function QuestionForm() {
         }
     })
     return (
-        <div className="container form-container row">
+        <div className="form-container row">
             <div className="banner ">
-                <div className="inner rounded px-4 pb-3 ">
+                <div className="inner rounded px-md-4 px-1 pb-md-3 pb-1 ">
                     <img src={profileImg} alt="" />
-                    <p className="text-center fs-5 fw-bold">JDTS RealEstate</p>
-                    <p className="fs-4 fw-bold">First time all developers under one roof</p>
+                    <p className="text-center fs-5 fw-bold name">JDTS RealEstate</p>
+                    <p className="fs-4 fw-bold head">First time all developers under one roof</p>
                     <div>
-                        <p className="fw-bold">&#x2022; Dunabe | Dubai | Saudi | Vincitore</p>
-                        <p className="fw-bold">&#x2022; Emmar | Soabha | Heart of Europe</p>
+                        <p className="fw-bold content">&#x2022; Dunabe | Dubai | Saudi | Vincitore</p>
+                        <p className="fw-bold content">&#x2022; Emmar | Soabha | Heart of Europe</p>
                     </div>
                 </div>
             </div>
